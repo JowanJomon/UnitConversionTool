@@ -25,13 +25,13 @@ convert.addEventListener("click", function () {
 
 function convertKey(x) {
   num = parseFloat(x);
-  num1 = num * 3.281;
-  num2 = num * 0.3048;
-  lengthHolder.innerHTML = `${key.value} meters = ${num1} feet <br> ${key.value} feet =  ${num2} meters`;
-  num1 = (num * 0.264172).toFixed(2);
-  num2 = (num * 3.78541).toFixed(2);
-  volumeHolder.innerHTML = `${key.value} liters = ${num1} gallons <br> ${key.value} gallons =  ${num2} liters`;
-  num1 = (num * 2.20462).toFixed(2);
-  num2 = (num * 0.453592).toFixed(2);
-  massHolder.innerHTML = `${key.value} kilos = ${num1} pounds <br> ${key.value} pounds =  ${num2} kilos`;
+  num1 = (num * 3.281).toFixed(3);
+  num2 = (num * 0.3048).toFixed(3);
+  lengthHolder.innerHTML = `${key.value} Meters = ${num1} Feet <br> ${key.value} Feet =  ${num2} Meters`;
+  num1 = (num * 0.264172).toFixed(3);
+  num2 = (num * 3.78541).toFixed(3);
+  volumeHolder.innerHTML = `${key.value} Liters = ${num1} Gallons <br> ${key.value} Gallons =  ${num2} Liters`;
+  num1 = (num * 2.20462).toFixed(3);
+  num2 = (num * 0.453592).toFixed(3);
+  massHolder.innerHTML = `${key.value} Kilos = ${num1} Pounds <br> ${key.value} Pounds =  ${num2} Kilos`;
 }
