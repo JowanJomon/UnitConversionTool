@@ -51,9 +51,6 @@ h3 {
   color: rgb(39, 13, 80);
 }
 .button:hover {
-  font-size: 23px;
-  margin-right: 10px;
-  padding: 5px 10px;
   background-color: black;
   color: aliceblue;
   transition: ease-in 0.3;
