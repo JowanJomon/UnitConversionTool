@@ -17,7 +17,11 @@ let num2 = 0;
 
 convert.addEventListener("click", function () {
   if (key.value) {
-    convertKey(key.value);
+    if (isNaN(key.value)) {
+      alert("Please Enter valid Number");
+    } else {
+      convertKey(key.value);
+    }
   } else {
     alert("Please Enter valid Number");
   }
