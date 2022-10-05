@@ -11,7 +11,8 @@ if (storageleads) {
 }
 
 addbtn.addEventListener("click", add);
-deletbtn.addEventListener("click", clear);
+deletbtn.addEventListener("click", clearLink);
+savebtn.addEventListener("click", saveLnk);
 
 function add() {
   let link = document.getElementById("link").value;
@@ -36,7 +37,15 @@ function pushLocalStoage() {
   localStorage.setItem("leads", storageleads);
 }
 
-function clear() {
+function saveLnk() {
+  chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
+    leads.push(tabs[0].url);
+    render(leads);
+    pushLocalStoage();
+  });
+}
+function clearLink() {
   localStorage.clear();
-  links.innerHTML = `<li>Please enter a link to store.</li>`;
+  leads = [];
+  links.innerHTML = `<li>Please enter a  link to store</li>`;
 }
