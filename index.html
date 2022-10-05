@@ -1,26 +1,32 @@
 <html>
   <head>
-    <link rel="stylesheet" href="index.css">
-    <title>Link Manager </title>
+    <link rel="stylesheet" href="index.css" />
+    <title>Units Conversion</title>
 
-    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/455/455691.png">
-
+    <link rel="icon" type="image/x-icon" href="h" />
   </head>
-<body>
-<div class="container">
-    <h3 class="title">Link Manager v1.0</h3>
+  <body>
+    <div class="inputContainer">
+      <h2>Metric/Imperial Conversion</h2>
+      <input type="text" placeholder="300" />
+      <button id="convert">CONVERT</button>
+    </div>
 
-    <h3>Enter the link</h3>
-    <input id="link" class="input" type="text"></body>
-        <div class="buttonDiv">
-            <button  class="button" id="add">ADD</button>
-            <button  class="button" id="save">SAVE FROM ADDRESS BAR</button>
-            <button  class="button" id="delete">CLEAR</button>
-        </div>
-     <ul id="links"></ul>  
-</div>
-<script src="index.js"></script>
+    <div class="outputContainer">
+      <h3>Length (Meter/Feet)</h3>
+      <p>Display here</p>
+    </div>
 
-</body>
+    <div class="outputContainer">
+      <h3>Volume (Liters/Gallons)</h3>
+      <p>Display here</p>
+    </div>
 
+    <div class="outputContainer">
+      <h3>Mass (Kilograms/Pounds)</h3>
+      <p>Display here</p>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
 </html>
