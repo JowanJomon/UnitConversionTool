@@ -39,3 +39,12 @@ function convertKey(x) {
   num2 = (num * 0.453592).toFixed(3);
   massHolder.innerHTML = `${key.value} Kilos = ${num1} Pounds <br> ${key.value} Pounds =  ${num2} Kilos`;
 }
+
+const input = document.getElementById("convertee");
+input.addEventListener("keyup", function (event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    document.getElementById("convert").click();
+    const button = document.getElementById("convert");
+  }
+});
